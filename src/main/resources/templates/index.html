@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <td><input type="text" required name="expression" placeholder="expression"/></td>
+        <td><button class="submitButton">calculate</button></td>
+    </form>
+    <p th:if="${result != null}" th:text="${result}"></p>
+    <p style="color: red" th:if="${exception}" th:text="${exception}"></p>
+</div>
+</body>
+</html>
